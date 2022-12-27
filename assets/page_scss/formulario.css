@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: auto;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+.container__text {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  padding: 5px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+.form__input {
+  border-radius: 16px;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.form__submit {
+  padding: 15px;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.termo__uso {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+}/*# sourceMappingURL=formulario.css.map */

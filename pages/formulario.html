@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/page_scss/formulario.css">
+    <title>Formulario / Twaiter</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="container__title">FormFAKE para inscrição do Twaiter</h1>
+        <p class="container__text">Nenhum dado inserido aqui será salvo. (apenas testes academicos)</p>
+
+        <form action="/pages/concluido.html" method="GET" class="form">
+         
+        <label for="nome" class="form__label">Usuário</label>
+        <input type="text" class="form__input validar usuario" placeholder="Insira seu nome">
+
+        <label for="nome" class="form__label">Email</label>
+        <input type="email" class="form__input validar" placeholder="Insira seu email">
+
+        <label for="nome" class="form__label">Senha</label>
+        <input type="password" class="form__input validar senha" placeholder="Insira seu nome">
+
+        <label for="nome" class="form__label">Repetir senha</label>
+        <input type="password" class="form__input validar repetir-senha"  placeholder="Insira seu nome">
+        
+        <div class="termo__uso">
+
+            <label for="" class="form__label">Aceitar termos e uso</label>
+            <input type="checkbox" required>
+        </div>
+
+        <button class="form__submit" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="../js/form.js"></script>
+</body>
+</html>

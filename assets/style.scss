@@ -1,0 +1,31 @@
+@use './sass_modules/initial';
+@use './sass_modules/variables' as v;
+@use './sass_modules/mixins';
+@use './sass_modules/container';
+@use './sass_modules/modal-login';
+@use './sass_modules/fixedbar';
+@use './sass_modules/left_container';
+@use './sass_modules/center_container';
+@use './sass_modules/right__container';
+@use './sass_modules/modal-inscrever';
+
+body {
+    background-color: v.$bg;
+    color: v.$white;
+}
+.a__link{
+    color: v.$bg-blue;
+    &:hover {
+        border-bottom: 1px solid v.$bg-blue;
+    }
+}
+button {
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+a {
+    cursor: pointer;
+
+}

@@ -1,0 +1,80 @@
+@use './variables' as v;
+@use './mixins';
+
+
+.modal__background-2 {
+    display: none;
+    @include mixins.modal-background;
+    place-content: center;
+    overflow: hidden;
+}
+.modal__box-2 {
+    position: relative;
+}
+.modal__close {
+    position: absolute;
+    padding: 15px;
+    color: v.$white-title;
+}
+.modal__login {
+    background-color: black;
+    width: 540px;
+    height: 590px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: v.$white-title;
+    padding: 10px 140px;
+    &--title {
+        text-align: left;
+        font-size: 31px;
+        padding: 15px 0;
+    }
+    &--buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &--box-ou {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+    }
+    &--ou {
+        font-size: 15px;
+    }
+}
+.modal__input {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid v.$white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 270px;
+    height: 43px;
+    color: white;
+    margin-bottom: 15px;
+}
+.btn-invisivel {
+    background-color: transparent;
+    color: v.$white-title;
+    border: 1px solid v.$white-title;
+    margin-top: 15px;
+}
+#linha-horizontal {
+    width: 110px;
+    height: 0.5px;
+    border: 0.5px solid rgba(255,255,255,0.3);
+}
+.modal__bg--icon {
+    font-size: 30px;
+}
+.login-termo {
+    text-align: left;
+    padding-top: 10px;
+}
+.tem_conta {
+    padding-top: 30px;
+}
